@@ -1,0 +1,16 @@
+Bootstrap: docker
+From: pytorch/pytorch:2.3.1-cuda12.1-cudnn8-devel
+
+%post
+    # Install bash if necessary
+    apt-get update && apt-get install -y git
+
+%files
+    requirements.dev.txt .
+    requirements.build.txt .
+    requirements.txt .
+
+%post
+    pip3 install -r requirements.dev.txt
+    pip3 install -r requirements.build.txt
+    pip3 install -r requirements.txt

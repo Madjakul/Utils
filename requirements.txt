@@ -1,0 +1,18 @@
+datasets
+huggingface-hub
+huggingface_hub[cli]
+lightning==2.3.3
+numpy
+psutil
+ray[tune]
+torch==2.3.1
+torcheval==0.0.7
+torch_geometric==2.5.3
+tqdm
+transformers
+wandb
+-f https://data.pyg.org/whl/torch-2.3.0+cu121.html
+torch_cluster
+torch_scatter
+torch_sparse
+torch_spline_conv
